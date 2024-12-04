@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  src: url(./Raleway-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 700;
+  src: url(./Raleway-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gogh';
+  font-weight: 800;
+  src: url(./Gogh-ExtraBold.otf) format('opentype');
+}

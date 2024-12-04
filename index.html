@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Growtask</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__menu">
+      <a class="header__logo" href="#"></a>
+      <ul class="header__link-list">
+        <li><a class="header__link">Текст и картинки</a></li>
+        <li><a class="header__link">Пример слайдера</a></li>
+        <li><a class="header__link">Кнопки и картинки</a></li>
+        <li><a class="header__link">Вопрос — ответ</a></li>
+        <li><button class="header__button-form">К форме</button></li>
+      </ul>
+      <button class="header__button-popup"></button>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="lead">
+      <div class="lead__info-box">
+        <h1 class="lead__title">Покажи нам чудеса <span class="lead__highlighting">своей вёрстки</span></h1>
+        <p class="lead__text">Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя
+          всё получится.</p>
+        <div class="lead__nav">
+          <p class="lead__nav-text">Покажи ск<span class="lead__cute-text">р</span>олл <span class="lead__cute-text">на</span> <span class="lead__highlighting">до формы:</span></p>
+          <button class="lead__button">К форме</button>
+        </div>
+      </div>
+      <div class="lead__gallery-box">
+        <img src="./images/lead-image1.svg" class="lead__gallery-image lead__gallery-image_order_first">
+        <img src="./images/lead-image2.svg" class="lead__gallery-image lead__gallery-image_order_second">
+        <img src="./images/lead-image3.svg" class="lead__gallery-image lead__gallery-image_order_third">
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__info-box">
+        <div class="about__text-box">
+          <h2 class="about__title">Про вакансию</h2>
+          <p class="about__text">Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы, конечно
+            же, поможем.</p>
+          <p class="about__text">Напомним про условия:</p>
+        </div>
+        <ul class="about__criterion-list">
+          <li class="about__criterion">
+            <p class="about__criterion-title">20 000</p>
+            <p class="about__criterion-text">Твой оклад на время стажировки (Возможны премии)</p>
+          </li>
+          <li class="about__criterion">
+            <p class="about__criterion-title">5/2</p>
+            <p class="about__criterion-text">Рабочий график</p>
+          </li>
+          <li class="about__criterion">
+            <p class="about__criterion-title">8 ч</p>
+            <p class="about__criterion-text">Рабочий день</p>
+          </li>
+        </ul>
+      </div>
+      <div class="about__gallery-box">
+        <img class="about__image" src="./images/about-image1.svg" alt="">
+        <img class="about__image" src="./images/about-image2.svg" alt="">
+        <img class="about__image" src="./images/about-image3.svg" alt="">
+      </div>
+    </section>
+    <section class="slider">
+      <div class="slider__head">
+        <h2 class="slider__title">Сверстай слайдер</h2>
+        <div class="slider__button-box">
+          <button class="slider__button slider__button_type_back"></button>
+          <button class="slider__button slider__button_type_forward"></button>
+        </div>
+      </div>
+      <ul class="slider__card-box">
+        <li class="slider__card">
+          <img class="slider__card-image" src="./images/slide1.svg" alt="" >
+          <p class="slider__card-title">Северная корона</p>
+        </li>
+        <li class="slider__card">
+          <img class="slider__card-image" src="./images/slide2.svg" alt="" >
+          <p class="slider__card-title">Moscow barbering school</p>
+        </li>
+        <li class="slider__card">
+          <img class="slider__card-image" src="./images/slide3.svg" alt="" >
+          <p class="slider__card-title">Rh store</p>
+        </li>
+        <li class="slider__card">
+          <img class="slider__card-image" src="./images/slide4.svg" alt="" >
+          <p class="slider__card-title">Poolspecial</p>
+        </div>
+        <li class="slider__card">
+          <img class="slider__card-image" src="./images/slide5.svg" alt="" >
+          <p class="slider__card-title">Rh prod</p>
+        </li>
+      </ul>
+    </section>
+    <section class="presentation">
+      <img class="presentation__image" src="./images/presentation-image1.svg" alt="">
+      <ul class="presentation__choice-box">
+        <li class="presentation__card">
+          <img class="presentation__card-image" src="./images/presentation-image1.svg" alt="">
+          <p class="presentation__card-text">Картинка 1</p>
+        </li>
+        <li class="presentation__card">
+          <img class="presentation__card-image" src="./images/presentation-image2.svg" alt="">
+          <p class="presentation__card-text">Картинка 2</p>
+        </li>
+        <li class="presentation__card">
+          <img class="presentation__card-image" src="./images/presentation-image3.svg" alt="">
+          <p class="presentation__card-text">Картинка 3</p>
+        </li>
+      </ul>
+    </section>
+    <section class="support">
+      <h2 class="support__title">Ответы на вопросы</h2>
+      <ul class="support__question-list">
+        <li class="support__question">
+          <p class="support__text">У вас много проектов?</p>
+          <button class="support__button"></button>
+        </li>
+        <li class="support__question">
+          <p class="support__text">Есть ли карьерный рост?</p>
+          <button class="support__button"></button>
+        </li>
+        <li class="support__question">
+          <p class="support__text">У вас большой штат?</p>
+          <button class="support__button"></button>
+        </li>
+        <li class="support__question">
+          <p class="support__text">Какие цели у вашей студии?</p>
+          <button class="support__button"></button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__box">
+      <div class="footer__info-box">
+        <h2 class="footer__title">Форма ОС</h2>
+        <p class="footer__subtitle">Сверстай форму обратной связи. Будет круто, если заявку будут приходить сюда:
+          a@growtask.ru</p>
+        <p class="footer__text">Не забудь вставить соц.сети</p>
+        <ul class="footer__link-list">
+          <li><a class="footer__link footer__link_type_vk"></a></li>
+          <li><a class="footer__link footer__link_type_tg"></a></li>
+        </ul>
+      </div>
+      <form action="" class="footer__form">
+        <div class="footer__input-box">
+          <input type="text" class="footer__input" placeholder="Напиши вопрос*">
+          <input type="text" class="footer__input" placeholder="Телефон или почта*">
+          <input type="text" class="footer__input" placeholder="Твоё имя*">
+          <input type="text" class="footer__input" placeholder="Соц.сеть или мессенджер">
+        </div>
+        <div class="footer__button-box">
+          <button class="footer__button-submit">Отправить заявку</button>
+          <button class="footer__button-agree"></button>
+          <p class="footer__agree-text">Согласие с политикой</p>
+        </div>
+      </form>
+    </div>
+  </footer>
+</body>
+
+</html>

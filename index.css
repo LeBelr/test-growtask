@@ -1,0 +1,10 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+@import url(./blocks/header.css);
+@import url(./blocks/lead.css);
+@import url(./blocks/about.css);
+@import url(./blocks/slider.css);
+@import url(./blocks/presentation.css);
+@import url(./blocks/support.css);
+@import url(./blocks/footer.css);
