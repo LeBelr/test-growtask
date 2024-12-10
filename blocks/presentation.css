@@ -22,13 +22,25 @@
 }
 
 .presentation__card {
-  padding: 12px;
+  padding: 11px;
   display: flex;
   align-items: center;
   gap: 20px;
   border-radius: 4px;
   background: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
 }
+
+.presentation__card:hover {
+  border: 2px solid rgb(218, 242, 242);
+}
+
+.presentation__card_active {
+  border: 2px solid rgb(20, 204, 204);
+}
+
+
 
 .presentation__card-image {
   width: 48px;
@@ -73,12 +85,12 @@
 
 @media screen and (max-width: 767px) {
   .presentation {
-      flex-direction: column;
-      gap: 40px;
+    flex-direction: column;
+    gap: 40px;
   }
 
-    .presentation__image {
-        width: calc(342 / 374* 100vw);
-        height: calc(178 / 374* 100vw);
-    }
+  .presentation__image {
+    width: calc(342 / 374* 100vw);
+    height: calc(178 / 374* 100vw);
+  }
 }

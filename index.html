@@ -11,39 +11,41 @@
 <body>
   <header class="header">
     <nav class="header__menu">
-      <a class="header__logo" href="#"></a>
+      <a class="header__logo" href="#lead"></a>
       <ul class="header__link-list">
-        <li><a class="header__link">Текст и картинки</a></li>
-        <li><a class="header__link">Пример слайдера</a></li>
-        <li><a class="header__link">Кнопки и картинки</a></li>
-        <li><a class="header__link">Вопрос — ответ</a></li>
-        <li><button class="header__button-form">К форме</button></li>
+        <li><a class="header__link" href="#about">Текст и картинки</a></li>
+        <li><a class="header__link" href="#slider">Пример слайдера</a></li>
+        <li><a class="header__link" href="#presentation">Кнопки и картинки</a></li>
+        <li><a class="header__link" href="#support">Вопрос — ответ</a></li>
+        <li><a class="header__button-form" href="#footer">К форме</a></li>
       </ul>
-      <button class="header__button-popup"></button>
+      <button class="header__button-popup" type="button"></button>
     </nav>
   </header>
-  <main class="main">
-    <section class="lead">
+  <main class="main" id="main">
+    <section class="lead" id="lead">
       <div class="lead__info-box">
         <h1 class="lead__title">Покажи нам чудеса <span class="lead__highlighting">своей вёрстки</span></h1>
         <p class="lead__text">Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя
           всё получится.</p>
         <div class="lead__nav">
-          <p class="lead__nav-text">Покажи ск<span class="lead__cute-text">р</span>олл <span class="lead__cute-text">на</span> <span class="lead__highlighting">до формы:</span></p>
-          <button class="lead__button">К форме</button>
+          <p class="lead__nav-text">Покажи ск<span class="lead__cute-text">р</span>олл <span
+              class="lead__cute-text">на</span> <span class="lead__highlighting">до формы:</span></p>
+          <a class="lead__button" href="#footer">К форме</a>
         </div>
       </div>
       <div class="lead__gallery-box">
-        <img src="./images/lead-image1.svg" class="lead__gallery-image lead__gallery-image_order_first">
-        <img src="./images/lead-image2.svg" class="lead__gallery-image lead__gallery-image_order_second">
-        <img src="./images/lead-image3.svg" class="lead__gallery-image lead__gallery-image_order_third">
+        <img src="./images/lead-image1.svg" class="lead__gallery-image lead__gallery-image_order_first" alt="Изображение">
+        <img src="./images/lead-image2.svg" class="lead__gallery-image lead__gallery-image_order_second" alt="Изображение">
+        <img src="./images/lead-image3.svg" class="lead__gallery-image lead__gallery-image_order_third" alt="Изображение">
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__info-box">
         <div class="about__text-box">
           <h2 class="about__title">Про вакансию</h2>
-          <p class="about__text">Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы, конечно
+          <p class="about__text">Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы,
+            конечно
             же, поможем.</p>
           <p class="about__text">Напомним про условия:</p>
         </div>
@@ -63,82 +65,94 @@
         </ul>
       </div>
       <div class="about__gallery-box">
-        <img class="about__image" src="./images/about-image1.svg" alt="">
-        <img class="about__image" src="./images/about-image2.svg" alt="">
-        <img class="about__image" src="./images/about-image3.svg" alt="">
+        <img class="about__image" src="./images/about-image1.svg" alt="Изображение">
+        <img class="about__image" src="./images/about-image2.svg" alt="Изображение">
+        <img class="about__image" src="./images/about-image3.svg" alt="Изображение">
       </div>
     </section>
-    <section class="slider">
+    <section class="slider" id="slider">
       <div class="slider__head">
         <h2 class="slider__title">Сверстай слайдер</h2>
         <div class="slider__button-box">
-          <button class="slider__button slider__button_type_back"></button>
-          <button class="slider__button slider__button_type_forward"></button>
+          <button class="slider__button slider__button_type_back" type="button"></button>
+          <button class="slider__button slider__button_type_forward" type="button"></button>
         </div>
       </div>
       <ul class="slider__card-box">
         <li class="slider__card">
-          <img class="slider__card-image" src="./images/slide1.svg" alt="" >
+          <img class="slider__card-image" src="./images/slide1.svg" alt="Изображение">
           <p class="slider__card-title">Северная корона</p>
         </li>
         <li class="slider__card">
-          <img class="slider__card-image" src="./images/slide2.svg" alt="" >
+          <img class="slider__card-image" src="./images/slide2.svg" alt="Изображение">
           <p class="slider__card-title">Moscow barbering school</p>
         </li>
         <li class="slider__card">
-          <img class="slider__card-image" src="./images/slide3.svg" alt="" >
+          <img class="slider__card-image" src="./images/slide3.svg" alt="Изображение">
           <p class="slider__card-title">Rh store</p>
         </li>
         <li class="slider__card">
-          <img class="slider__card-image" src="./images/slide4.svg" alt="" >
+          <img class="slider__card-image" src="./images/slide4.svg" alt="Изображение">
           <p class="slider__card-title">Poolspecial</p>
-        </div>
+          </div>
         <li class="slider__card">
-          <img class="slider__card-image" src="./images/slide5.svg" alt="" >
+          <img class="slider__card-image" src="./images/slide5.svg" alt="Изображение">
           <p class="slider__card-title">Rh prod</p>
         </li>
       </ul>
     </section>
-    <section class="presentation">
-      <img class="presentation__image" src="./images/presentation-image1.svg" alt="">
+    <section class="presentation" id="presentation">
+      <img class="presentation__image" src="./images/presentation-image1.svg" alt="Изображение">
       <ul class="presentation__choice-box">
-        <li class="presentation__card">
-          <img class="presentation__card-image" src="./images/presentation-image1.svg" alt="">
+        <li class="presentation__card presentation__card_active">
+          <img class="presentation__card-image" src="./images/presentation-image1.svg" alt="Изображение">
           <p class="presentation__card-text">Картинка 1</p>
         </li>
         <li class="presentation__card">
-          <img class="presentation__card-image" src="./images/presentation-image2.svg" alt="">
+          <img class="presentation__card-image" src="./images/presentation-image2.svg" alt="Изображение">
           <p class="presentation__card-text">Картинка 2</p>
         </li>
         <li class="presentation__card">
-          <img class="presentation__card-image" src="./images/presentation-image3.svg" alt="">
+          <img class="presentation__card-image" src="./images/presentation-image3.svg" alt="Изображение">
           <p class="presentation__card-text">Картинка 3</p>
         </li>
       </ul>
     </section>
-    <section class="support">
+    <section class="support" id="support">
       <h2 class="support__title">Ответы на вопросы</h2>
       <ul class="support__question-list">
         <li class="support__question">
-          <p class="support__text">У вас много проектов?</p>
-          <button class="support__button"></button>
+          <div class="support__question-box">
+            <p class="support__text">У вас много проектов?</p>
+            <button class="support__button" type="button"></button>
+          </div>
+          <p class="support__answer">У вас много проектов?</p>
         </li>
         <li class="support__question">
-          <p class="support__text">Есть ли карьерный рост?</p>
-          <button class="support__button"></button>
+          <div class="support__question-box">
+            <p class="support__text">Есть ли карьерный рост?</p>
+            <button class="support__button" type="button"></button>
+          </div>
+          <p class="support__answer">Есть ли карьерный рост?</p>
         </li>
         <li class="support__question">
-          <p class="support__text">У вас большой штат?</p>
-          <button class="support__button"></button>
+          <div class="support__question-box">
+            <p class="support__text">У вас большой штат?</p>
+            <button class="support__button"></button>
+          </div>
+          <p class="support__answer">У вас большой штат?</p>
         </li>
         <li class="support__question">
-          <p class="support__text">Какие цели у вашей студии?</p>
-          <button class="support__button"></button>
+          <div class="support__question-box">
+            <p class="support__text">Какие цели у вашей студии?</p>
+            <button class="support__button" type="button"></button>
+          </div>
+          <p class="support__answer">Какие цели у вашей студии?</p>
         </li>
       </ul>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer__box">
       <div class="footer__info-box">
         <h2 class="footer__title">Форма ОС</h2>
@@ -146,25 +160,48 @@
           a@growtask.ru</p>
         <p class="footer__text">Не забудь вставить соц.сети</p>
         <ul class="footer__link-list">
-          <li><a class="footer__link footer__link_type_vk"></a></li>
-          <li><a class="footer__link footer__link_type_tg"></a></li>
+          <li><a class="footer__link footer__link_type_vk" href="https://vk.com/growtask"></a></li>
+          <li><a class="footer__link footer__link_type_tg" href="https://t.me/growtask"></a></li>
         </ul>
       </div>
       <form action="" class="footer__form">
         <div class="footer__input-box">
-          <input type="text" class="footer__input" placeholder="Напиши вопрос*">
-          <input type="text" class="footer__input" placeholder="Телефон или почта*">
-          <input type="text" class="footer__input" placeholder="Твоё имя*">
-          <input type="text" class="footer__input" placeholder="Соц.сеть или мессенджер">
+          <input type="text" class="footer__input" placeholder="Напиши вопрос*" name="question" required>
+          <input type="text" class="footer__input" placeholder="Телефон или почта*" name="contact" required>
+          <input type="text" class="footer__input" placeholder="Твоё имя*" name="name" required>
+          <input type="text" class="footer__input" placeholder="Соц.сеть или мессенджер" name="social">
         </div>
         <div class="footer__button-box">
-          <button class="footer__button-submit">Отправить заявку</button>
-          <button class="footer__button-agree"></button>
-          <p class="footer__agree-text">Согласие с политикой</p>
+          <button class="footer__button-submit" type="submit">Отправить заявку</button>
+          <label class="footer__agree">
+            <input class="footer__button-agree" type="checkbox" required></input>
+            Согласие с политикой
+          </label>
         </div>
       </form>
     </div>
   </footer>
+
+  <div class="popup">
+    <div class="popup__header">
+      <p class="popup__title">Меню</p>
+      <button class="popup__button-close" type="button"></button>
+    </div>
+    <nav class="popup__nav">
+      <ul class="popup__link-list">
+        <li class="popup__link"><a class="popup__link-text" href="#about">Текст и картинки</a></li>
+        <li class="popup__link"><a class="popup__link-text" href="#slider">Пример слайдера</a></li>
+        <li class="popup__link"><a class="popup__link-text" href="#presentation">Кнопки и картинки</a></li>
+        <li class="popup__link"><a class="popup__link-text" href="#support">Вопрос—ответ</a></li>
+      </ul>
+      <a class="popup__popup-button" href="#footer">К форме</a>
+      <ul class="popup__social-link-list">
+        <li><a class="popup__social-link popup__social-link_type_vk" href="https://vk.com/growtask"></a></li>
+        <li><a class="popup__social-link popup__social-link_type_tg" href="https://t.me/growtask"></a></li>
+      </ul>
+    </nav>
+  </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>

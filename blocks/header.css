@@ -1,6 +1,10 @@
 .header {
   padding: 0 250px;
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 25px 0px rgba(5, 25, 25, 0.08);
+  z-index: 2;
 }
 
 .header__menu {
@@ -11,12 +15,44 @@
 }
 
 .header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   height: 56px;
   background-image: url(../images/logo-big.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  font-family: Gogh;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+
+  transition: color .2s linear;
+}
+
+.header__logo:hover {
+  background-image: none;
+  text-decoration: none;
+}
+
+.header__logo::before {
+  content: "";
+  background-image: url(../images/logo-big.svg);
+  transform: translateY(100%);
+  transition: all .2s linear;
+}
+
+.header__logo:hover::before {
+  transform: translateY(0);
+  color: rgb(20, 204, 204);
+  content: "Наверх";
+}
+
+.header__logo:active::before {
+  color: #11A6A6;
 }
 
 .header__link-list {
@@ -26,18 +62,30 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.header__link {
+  text-decoration: none;
+  padding: 12px 20px;
   font-family: 'Raleway';
   font-size: 16px;
   font-weight: 700;
   line-height: 150%;
+  color: rgb(61, 64, 64);
+  transition: color .2s linear;
 }
 
-.header__link {
-  padding: 12px 20px;
+.header__link:hover {
+  color: rgb(20, 204, 204);
+}
+
+.header__link:active {
+  color: rgb(17, 166, 166);
 }
 
 .header__button-form {
-  padding: 14px 21px;
+  text-decoration: none;
+  padding: 16px 21px;
   border-radius: 4px;
   background: rgb(20, 204, 204);
   border: 0;
@@ -47,12 +95,21 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 150%;
+  transition: all .2s linear;
+}
+
+.header__button-form:hover {
+  background-color: rgb(23, 229, 229);
+}
+
+.header__button-form:active {
+  background-color: rgb(17, 166, 166);
 }
 
 .header__button-popup {
   display: none;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-radius: 4px;
   background: rgb(20, 204, 204);
   border: 0;
@@ -60,6 +117,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.header__button-popup:hover {
+  background-color: rgb(23, 229, 229);
+}
+
+.header__button-popup:active {
+  background-color: rgb(17, 166, 166);
 }
 
 @media screen and (max-width: 1919px) {
@@ -68,7 +135,7 @@
   }
 }
 
-@media screen and (max-width: 1367px) {
+@media screen and (max-width: 1365px) {
   .header {
     padding: 0 16px;
     height: 64px;
